@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>jud-cloud</artifactId>
+        <groupId>jud.cloud</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>jud-cloud-common</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>jud-cloud-common-core</module>
+        <module>jud-cloud-common-gateway</module>
+        <module>jud-cloud-common-security</module>
+        <module>jud-cloud-common-data</module>
+        <module>jud-cloud-common-log</module>
+        <module>jud-cloud-common-minio</module>
+        <module>jud-cloud-common-swagger</module>
+        <module>jud-cloud-common-transaction</module>
+    </modules>
+
+
+</project>

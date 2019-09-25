@@ -1,0 +1,12 @@
+${AnsiColor.BRIGHT_RED}
+       ____  ______      ________    ____  __  ______
+      / / / / / __ \    / ____/ /   / __ \/ / / / __ \
+ __  / / / / / / / /   / /   / /   / / / / / / / / / /
+/ /_/ / /_/ / /_/ /   / /___/ /___/ /_/ / /_/ / /_/ /
+\____/\____/_____/____\____/_____/\____/\____/_____/
+                /_____/
+
+              http://www.judb.club
+
+${AnsiColor.BLUE}
+::: Project (version:${application.version}) :::             ＼(^O^)／    Spring-Boot ${spring-boot.version}

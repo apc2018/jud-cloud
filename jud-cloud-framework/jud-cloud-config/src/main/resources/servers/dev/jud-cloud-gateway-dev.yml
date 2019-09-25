@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    gateway:
+      locator:
+        enabled: true #服务名与地址转换开启
+
+security:
+  encode:
+    # 前端密码密钥，必须16位
+    key: 'judcloudjudcloud'
+
+# 不校验验证码终端
+ignore:
+  clients:
+    - test
+  swagger-providers:
+    - jud-cloud-auth
+    - jud-cloud-tx-manager

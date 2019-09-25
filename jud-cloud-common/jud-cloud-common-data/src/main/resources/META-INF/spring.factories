@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    jud.cloud.common.data.cache.RedisTemplateConfig,\
+    jud.cloud.common.data.cache.RedisCacheManagerConfig,\
+    jud.cloud.common.data.cache.RedisCacheAutoConfiguration,\
+    jud.cloud.common.data.tenant.TenantContextHolderFilter,\
+    jud.cloud.common.data.tenant.JudCloudFeignTenantConfiguration,\
+    jud.cloud.common.data.mybatis.MybatisPlusConfig

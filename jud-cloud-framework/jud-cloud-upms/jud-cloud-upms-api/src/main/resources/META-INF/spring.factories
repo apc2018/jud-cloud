@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  jud.cloud.upms.api.feign.fallback.RemoteUserServiceFallbackImpl,\
+  jud.cloud.upms.api.feign.fallback.RemoteLogServiceFallbackImpl,\
+  jud.cloud.upms.api.feign.fallback.RemoteTokenServiceFallbackImpl,\
+  jud.cloud.upms.api.feign.factory.RemoteUserServiceFallbackFactory,\
+  jud.cloud.upms.api.feign.factory.RemoteLogServiceFallbackFactory,\
+  jud.cloud.upms.api.feign.factory.RemoteTokenServiceFallbackFactory

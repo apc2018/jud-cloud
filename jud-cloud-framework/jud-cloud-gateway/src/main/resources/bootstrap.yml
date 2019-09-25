@@ -1,0 +1,32 @@
+info:
+  app:
+    name: jud cloud gateway
+    version: v0.0.1
+
+server:
+  port: 8000
+
+spring:
+  application:
+    name: @artifactId@
+  # 配置中心
+  cloud:
+    config:
+      fail-fast: true
+      name: ${spring.application.name}
+      profile: ${spring.profiles.active}
+      discovery:
+        enabled: true
+        service-id: jud-cloud-config
+  profiles:
+    active: dev
+
+# 注册中心
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://admin:123456@jud-cloud-eureka:9000/eureka/
+
+

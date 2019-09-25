@@ -1,0 +1,54 @@
+## spring security 配置
+security:
+  oauth2:
+    client:
+      client-id: ENC(AyXl6YxgOpXtxAjfBN81Ow==) #jud
+      client-secret: ENC(AyXl6YxgOpXtxAjfBN81Ow==) #jud
+      scope: server
+      # 默认放行url,子模块重写时application-dev.yml中的公共配置会被覆盖,所以要把公共配置中的放行url再写一次
+      ignore-urls:
+        - '/actuator/**'
+        - '/v2/api-docs'
+        - '/user/info/*'
+        - '/social/info/*'
+        - '/mobile/*'
+        - '/log/save'
+
+# 数据源
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://jud-cloud-mysql:3306/judcloud?allowPublicKeyRetrieval=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+
+# swagger相关配置,覆盖全局配置
+swagger:
+  authorization:
+    authorization-scope-list:
+      - scope: 'server'
+        description: 'server all'
+      - scope: 'read'
+        description: 'read all'
+      - scope: 'write'
+        description: 'access all'
+
+# 文件系统
+minio:
+  url: http://localhost:9090
+  access-key: judcloud
+  secret-key: judcloud
+
+# Logger Config
+logging:
+  level:
+    jud.cloud.upms.biz.mapper: debug
+
+mybatis-plus:
+  global-config:
+    db-config:
+      db-type: mysql
+  configuration:
+    jdbc-type-for-null: null
+

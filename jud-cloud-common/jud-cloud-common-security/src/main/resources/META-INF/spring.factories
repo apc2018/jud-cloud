@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  jud.cloud.common.security.feign.JudCloudFeignClientConfiguration,\
+  jud.cloud.common.security.service.JudCloudUserDetailsServiceImpl

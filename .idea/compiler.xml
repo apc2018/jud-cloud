@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jud-cloud-auth" />
+        <module name="jud-cloud-common-core" />
+        <module name="jud-cloud-common-data" />
+        <module name="jud-cloud-common-gateway" />
+        <module name="jud-cloud-common-log" />
+        <module name="jud-cloud-common-minio" />
+        <module name="jud-cloud-common-security" />
+        <module name="jud-cloud-common-swagger" />
+        <module name="jud-cloud-common-transaction" />
+        <module name="jud-cloud-config" />
+        <module name="jud-cloud-demo-test" />
+        <module name="jud-cloud-eureka" />
+        <module name="jud-cloud-gateway" />
+        <module name="jud-cloud-upms-api" />
+        <module name="jud-cloud-upms-biz" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jud-cloud-commom-transaction" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jud-cloud-auth" options="" />
+      <module name="jud-cloud-commom-transaction" options="-parameters" />
+      <module name="jud-cloud-common" options="-parameters" />
+      <module name="jud-cloud-common-core" options="" />
+      <module name="jud-cloud-common-data" options="" />
+      <module name="jud-cloud-common-gateway" options="" />
+      <module name="jud-cloud-common-log" options="" />
+      <module name="jud-cloud-common-minio" options="" />
+      <module name="jud-cloud-common-security" options="" />
+      <module name="jud-cloud-common-swagger" options="" />
+      <module name="jud-cloud-common-transaction" options="" />
+      <module name="jud-cloud-config" options="" />
+      <module name="jud-cloud-demo-test" options="" />
+      <module name="jud-cloud-eureka" options="" />
+      <module name="jud-cloud-framework" options="-parameters" />
+      <module name="jud-cloud-gateway" options="" />
+      <module name="jud-cloud-upms" options="-parameters" />
+      <module name="jud-cloud-upms-api" options="" />
+      <module name="jud-cloud-upms-biz" options="" />
+    </option>
+  </component>
+</project>
