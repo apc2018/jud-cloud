@@ -1,6 +1,6 @@
 ## 当前版本
 V0.0.1
-## jud cloud 
+## jud cloud 微服务开发脚手架
 
 ## 当前架构
 - 基于Spring Boot 2.0.7.RELEASE
